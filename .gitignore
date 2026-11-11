@@ -218,3 +218,38 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# =====================================
+# Projet Adaptive Crowd Monitoring
+# =====================================
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# Fichiers sensibles
+.env
+*.env
+*.key
+secrets.*
+config.local.*
+
+# Données volumineuses (on garde les .gitkeep)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modèles entraînés (on garde le .gitkeep)
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.h5
+*.pkl
+
+# Suivi d'expériences et divers
+mlruns/
+.vscode/
+.idea/
+.DS_Store
