@@ -34,8 +34,7 @@ def prepare_dataset(stationary: bool, directory: str = "data") -> pd.DataFrame:
     return clean_dataset(load_csv(path))
 
 
-def split_stream(df: pd.DataFrame, train_ratio: float = 0.8):
-    """Découpage chronologique (pas de mélange : c'est un flux temporel)."""
+def split_stream(df: pd.DataFrame, train_ratio: float = 0.8):   
     cut = int(len(df) * train_ratio)
     return df.iloc[:cut].reset_index(drop=True), df.iloc[cut:].reset_index(drop=True)
 
