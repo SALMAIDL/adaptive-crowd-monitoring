@@ -1,2 +1,2 @@
 """Configuration générale du projet."""
-PROJECT_NAME = "Adaptive Crowd Monitoring"
+PROJECT_NAME = "ACMG - Crowd Monitoring B"
